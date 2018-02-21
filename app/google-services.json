@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "527646880816",
+    "firebase_url": "https://privilegemeeting-a328d.firebaseio.com",
+    "project_id": "privilegemeeting-a328d",
+    "storage_bucket": "privilegemeeting-a328d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:527646880816:android:eb0c9f63ec9cc97c",
+        "android_client_info": {
+          "package_name": "com.github.chizoba.firebasecloudfunctions"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "527646880816-k3si0sl4tbp582vsme7r08ot0cs8hbku.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.github.chizoba.firebasecloudfunctions",
+            "certificate_hash": "d46af7976571c257f1e9180ab915b3b7d72168e1"
+          }
+        },
+        {
+          "client_id": "527646880816-nuqrakdq9b0ml7lb572a80u4h8l1lu8k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDTAocaL8biNxthu7LmnlFOgLxZG6aQe8U"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "527646880816-nuqrakdq9b0ml7lb572a80u4h8l1lu8k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
