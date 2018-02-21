@@ -1,0 +1,14 @@
+target
+bin
+gen
+proguard
+.DS_Store
+theme/build-resource/compiled-images
+theme/build-resource/src-images
+/build
+/captures
+/.gradle
+local.properties
+.idea/
+*.iml
+*.pyc
