@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">PrivilegeMeeting</string>
+    <string name="title_activity_sample_login">SampleLoginActivity</string>
 </resources>

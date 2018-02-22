@@ -6,8 +6,12 @@ package com.banana.verywild.privilegemeeting;
 
 import android.app.Activity;
 import android.content.Context;
+import android.content.pm.PackageInfo;
+import android.content.pm.PackageManager;
+import android.content.pm.Signature;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.util.Base64;
 import android.util.Log;
 import android.view.View;
 import android.view.WindowManager;
@@ -17,6 +21,11 @@ import android.widget.Toast;
 import com.nhn.android.naverlogin.OAuthLogin;
 import com.nhn.android.naverlogin.OAuthLoginHandler;
 import com.nhn.android.naverlogin.ui.view.OAuthLoginButton;
+
+import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
+
+import static com.kakao.util.helper.Utility.getPackageInfo;
 
 /// 네이버 아이디로 로그인 샘플앱
 
@@ -65,6 +74,7 @@ public class OAuthSampleActivity extends Activity {
         initView();
 
         this.setTitle("OAuthLoginSample Ver." + OAuthLogin.getVersion());
+        Log.d("lhd_read", "getKeyHash~~~" + getKeyHash(this));
     }
 
 
@@ -214,5 +224,22 @@ public class OAuthSampleActivity extends Activity {
         protected void onPostExecute(String res) {
             updateView();
         }
+    }
+
+    public static String getKeyHash(final Context context) {
+        PackageInfo packageInfo = getPackageInfo(context, PackageManager.GET_SIGNATURES);
+        if (packageInfo == null)
+            return null;
+
+        for (Signature signature : packageInfo.signatures) {
+            try {
+                MessageDigest md = MessageDigest.getInstance("SHA");
+                md.update(signature.toByteArray());
+                return Base64.encodeToString(md.digest(), Base64.NO_WRAP);
+            } catch (NoSuchAlgorithmException e) {
+                Log.w(TAG, "Unable to get MessageDigest. signature=" + signature, e);
+            }
+        }
+        return null;
     }
 }
