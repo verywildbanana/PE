@@ -34,6 +34,9 @@ class FCMActivity : AppCompatActivity(), View.OnClickListener {
 
             showAlertDialog()
         }
+
+
+        //test git
         database = FirebaseDatabase.getInstance()
         myRef = database?.getReference("messages")
         fcmScribeToTopic.setOnClickListener(this)
