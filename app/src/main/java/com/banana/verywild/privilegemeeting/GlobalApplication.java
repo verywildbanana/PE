@@ -3,6 +3,7 @@ package com.banana.verywild.privilegemeeting;
 import android.app.Activity;
 import android.app.Application;
 
+import com.facebook.FacebookSdk;
 import com.kakao.auth.KakaoSDK;
 
 /**
@@ -28,6 +29,7 @@ public class GlobalApplication extends Application {
 
         GlobalApplication.instance = this;
         KakaoSDK.init(new KakaoSDKAdapter());
+        FacebookSdk.sdkInitialize(getApplicationContext());
     }
 
     public static void setCurrentActivity(Activity currentActivity) {

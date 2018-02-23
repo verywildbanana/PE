@@ -1,4 +1,6 @@
 <resources>
     <string name="app_name">PrivilegeMeeting</string>
     <string name="title_activity_sample_login">SampleLoginActivity</string>
+    <string name="facebook_app_id">221348451760202</string>
+    <string name="fb_login_protocol_scheme">221348451760202</string>
 </resources>
