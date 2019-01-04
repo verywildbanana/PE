@@ -23,6 +23,8 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.util.Arrays;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 /**
  * Created by lineplus on 23/02/2018.
@@ -106,6 +108,41 @@ public class FacebookLoginActivity extends Activity {
                 request.executeAsync();
             }
         });
+
+        String pattern = "(([0-9]+)?(?i)h)?(([0-9]+)?(?i)m)?";
+        String input = "100H0m";
+        Pattern p = Pattern.compile(pattern);
+        Matcher m = p.matcher(input);
+        if (m.matches()) {
+            Log.d("lhd_read", "LineVideoView~matcher~group~" + m.group(0));
+            Log.d("lhd_read", "LineVideoView~matcher~group1~" + m.group(1));
+            Log.d("lhd_read", "LineVideoView~matcher~group2~" + m.group(2));
+            Log.d("lhd_read", "LineVideoView~matcher~group2~" + m.group(3));
+            Log.d("lhd_read", "LineVideoView~matcher~group2~" + m.group(4));
+        }
+        if (m.hitEnd()) {
+            Log.d("lhd_read", "LineVideoView~hitEnd~group~" + m.group());
+//            Log.d("lhd_read", "LineVideoView~hitEnd~group1~" + m.group(1));
+//            Log.d("lhd_read", "LineVideoView~hitEnd~group2~" + m.group(2));
+        }
+        Log.d("lhd_read", "LineVideoView~matcher~" + m.find());
+
+
+//        String time = "30m20s".replace("h", ":").replace("m", ":").replace("s", ":");
+
+
+        String time = "30h20s";
+
+        String[] splitTime = time.split("m");
+//
+//
+//        String sec = null;
+//        String minute = null;
+//        String hour = null;
+//
+//        for (int i = splitTime.length - 1; i >= 0; i--) {
+//            Log.d("lhd_read", "splitTime~" + splitTime[i]);
+//        }
     }
 
 
@@ -172,3 +209,4 @@ public class FacebookLoginActivity extends Activity {
         }
     }
 }
+

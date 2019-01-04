@@ -3,21 +3,48 @@
 
     <item
         is-multidex="true"
-        jar="/Users/lineplus/Downloads/workspace/verywild/android/PrivilegeMeeting/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jar="/Users/lineplus/.android/build-cache/d1bc9cc7ead159a50224d1a1f8739abfe3e9189f/output/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.1"
-        sha1="4dedee13d417e111c57a18d45c132e5a37216324">
-        <dex dex="/Users/lineplus/Downloads/workspace/verywild/android/PrivilegeMeeting/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_331af093da4f7edf89197d8ac753408c6b338185/classes.dex" />
+        sha1="820605b42a2d3d9cb9e6c4cc7453fb4f802aedff">
+        <dex dex="/Users/lineplus/Downloads/workspace/verywild/android/PE/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_d76b98fec3ce53f6424481480fd41c8f76eb20e0/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/Users/lineplus/Downloads/workspace/verywild/android/PrivilegeMeeting/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jar="/Users/lineplus/Downloads/workspace/verywild/android/PE/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="253e3e818a6be3031626bf73485b66a5b9ed05a7">
+        <dex dex="/Users/lineplus/Downloads/workspace/verywild/android/PE/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_7d99099b94e878e2878e110e9f21a5f5bd6e5b2a/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/lineplus/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-tasks/1.4.0/d85884acf6810a3bbbecb587f239005cbc846dc4/bolts-tasks-1.4.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="d85884acf6810a3bbbecb587f239005cbc846dc4">
+        <dex dex="/Users/lineplus/Downloads/workspace/verywild/android/PE/app/build/intermediates/transforms/dex/debug/folders/1000/10/bolts-tasks-1.4.0_d243938c0eadadb8996518f7f805caeac321bda5/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/lineplus/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-applinks/1.4.0/8ad21bf21784dacce5f2043afb97218cc377e835/bolts-applinks-1.4.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="8ad21bf21784dacce5f2043afb97218cc377e835">
+        <dex dex="/Users/lineplus/Downloads/workspace/verywild/android/PE/app/build/intermediates/transforms/dex/debug/folders/1000/10/bolts-applinks-1.4.0_da9cf4147294af40f8c270bd97733df67e0d0310/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/lineplus/Downloads/workspace/verywild/android/PE/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.1"
         sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
-        <dex dex="/Users/lineplus/Downloads/workspace/verywild/android/PrivilegeMeeting/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_5fd4a8a63ac02f0521359a58cedc0b99f39901a0/classes.dex" />
+        <dex dex="/Users/lineplus/Downloads/workspace/verywild/android/PE/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_cbaa2c002a7dd3c9f76135289e000eaf00fd4855/classes.dex" />
     </item>
 
 </items>
